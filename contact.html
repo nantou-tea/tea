@@ -3,9 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>聯絡訂購｜山嵐茶園</title>
-<meta name="description" content="山嵐茶園訂購方式：電話、LINE、表單留言。產地直送，歡迎預約上山喝茶。">
+<title>聯絡訂購｜南投茶葉產地直送・LINE 訂茶－山嵐茶園</title>
+<meta name="description" content="山嵐茶園訂購方式：電話 0962-015-297、LINE 官方帳號 @a0962015297。凍頂烏龍、梨山阿里山高山茶產地直送。">
+<meta name="keywords" content="買茶,茶葉訂購,南投茶葉,茶農直送,凍頂烏龍購買">
+<link rel="canonical" href="https://nantou-tea.github.io/tea/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="聯絡訂購｜南投茶葉產地直送－山嵐茶園">
+<meta property="og:description" content="電話或 LINE 即可訂購，凍頂烏龍、高山茶產地直送。">
+<meta property="og:url" content="https://nantou-tea.github.io/tea/contact.html">
+<meta property="og:locale" content="zh_TW">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://nantou-tea.github.io/tea/"},
+    {"@type": "ListItem", "position": 2, "name": "聯絡訂購", "item": "https://nantou-tea.github.io/tea/contact.html"}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C7 7 4 12 4 16a8 8 0 0 0 16 0c0-4-3-9-8-14z' fill='%235b6e4f'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,26 +53,33 @@
   <div class="two-col" style="align-items:start;">
     <div class="contact-info">
       <h2 style="margin-bottom:20px; letter-spacing:0.15em;">訂購方式</h2>
-      <p><strong>電話訂購</strong><br>0962-015-297（每日 09:00–18:00）</p>
+      <p><strong>電話訂購</strong><br><a href="tel:+886962015297">0962-015-297</a>（週一至週五 10:00–17:00）</p>
       <p><strong>LINE 官方帳號</strong><br>ID：@a0962015297<br><a href="https://lin.ee/UVTbbHg" target="_blank" rel="noopener" class="btn solid" style="margin-top:8px; padding:8px 24px;">加入 LINE 好友</a></p>
-      <p><strong>出貨說明</strong><br>黑貓宅配，訂單滿 NT$2,000 免運。<br>每批茶附當季農藥檢驗報告。</p>
+      <p><strong>出貨說明</strong><br>黑貓宅配，訂購茶葉兩斤即免運。</p>
     </div>
     <div>
       <h2 style="margin-bottom:20px; letter-spacing:0.15em;">留言訂購</h2>
-      <form onsubmit="event.preventDefault(); alert('感謝您的訊息！我們會儘快與您聯絡。（示範表單，實際送出功能需串接後端）');">
+      <form action="https://formspree.io/f/xvznbrkn" method="POST">
+        <input type="hidden" name="_subject" value="山嵐茶園網站：新的訂購留言">
         <div class="field">
           <label for="name">姓名</label>
-          <input id="name" type="text" required placeholder="王小明">
+          <input id="name" name="姓名" type="text" required placeholder="王小明">
         </div>
         <div class="field">
           <label for="phone">聯絡電話</label>
-          <input id="phone" type="tel" required placeholder="0912-345-678">
+          <input id="phone" name="聯絡電話" type="tel" required placeholder="0912-345-678">
+        </div>
+        <div class="field">
+          <label for="email">Email（選填）</label>
+          <input id="email" name="email" type="email" placeholder="example@gmail.com">
         </div>
         <div class="field">
           <label for="tea">想詢問的茶款</label>
-          <select id="tea">
+          <select id="tea" name="想詢問的茶款">
             <option>凍頂烏龍（春茶／冬茶）</option>
+            <option>大禹嶺・梨山高山烏龍</option>
             <option>杉林溪高山烏龍</option>
+            <option>阿里山高山烏龍</option>
             <option>蜜香紅茶</option>
             <option>紅玉紅茶（台茶18號）</option>
             <option>四季春</option>
@@ -61,7 +88,7 @@
         </div>
         <div class="field">
           <label for="msg">留言內容</label>
-          <textarea id="msg" rows="4" placeholder="想訂的數量、送禮需求、或想預約來茶園走走，都可以寫在這裡。"></textarea>
+          <textarea id="msg" name="留言內容" rows="4" placeholder="想訂的數量、送禮需求，都可以寫在這裡。"></textarea>
         </div>
         <button type="submit" class="btn solid" style="border:none; cursor:pointer; font-family:inherit;">送出訊息</button>
       </form>
@@ -73,7 +100,7 @@
   <div class="footer-inner">
     <div>
       <h4>山嵐茶園</h4>
-      <p>三代茶農・手作好茶</p>
+      <p>台灣極品高山茶・五大茶區嚴選</p>
     </div>
     <div>
       <h4>網站導覽</h4>
@@ -85,9 +112,9 @@
     <div>
       <h4>聯絡我們</h4>
       <ul>
-        <li>電話：0962-015-297</li>
+        <li>電話：<a href="tel:+886962015297">0962-015-297</a></li>
         <li><a href="https://lin.ee/UVTbbHg" target="_blank" rel="noopener">LINE：@a0962015297</a></li>
-        <li>營業：每日 09:00–18:00</li>
+        <li>營業：週一至週五 10:00–17:00</li>
       </ul>
     </div>
   </div>
