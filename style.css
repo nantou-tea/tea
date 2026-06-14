@@ -86,8 +86,8 @@ header {
   text-align: center;
   color: #f4f1e6;
   background:
-    linear-gradient(rgba(40, 52, 34, 0.55), rgba(40, 52, 34, 0.65)),
-    linear-gradient(165deg, #6b7d5a 0%, #4a5b3e 45%, #38442f 100%);
+    linear-gradient(rgba(40, 52, 34, 0.52), rgba(40, 52, 34, 0.68)),
+    url("assets/tea-mountain-mist.jpg") center 48% / cover no-repeat;
   overflow: hidden;
 }
 
@@ -113,6 +113,14 @@ header {
   max-width: 560px;
   margin: 0 auto 36px;
   opacity: .92;
+}
+
+.hero h1,
+.hero p,
+.hero .btn {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 18px rgba(28, 35, 24, .34);
 }
 
 .btn {
@@ -226,8 +234,10 @@ section { max-width: 1080px; margin: 0 auto; padding: 72px 24px; }
   min-height: 300px;
   background:
     linear-gradient(rgba(56,68,47,.15), rgba(56,68,47,.3)),
-    repeating-linear-gradient(100deg, #6b7d5a 0 26px, #5b6e4f 26px 52px, #768a63 52px 78px),
+    var(--photo-image, repeating-linear-gradient(100deg, #6b7d5a 0 26px, #5b6e4f 26px 52px, #768a63 52px 78px)),
     linear-gradient(160deg, #6b7d5a, #4a5b3e);
+  background-position: center;
+  background-size: cover;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -235,6 +245,67 @@ section { max-width: 1080px; margin: 0 auto; padding: 72px 24px; }
   color: #f4f1e6;
   font-size: 0.85rem;
   letter-spacing: 0.2em;
+  box-shadow: 0 18px 42px rgba(56, 68, 47, .14);
+  overflow: hidden;
+}
+
+.photo-block span {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background: rgba(56, 68, 47, .72);
+  border: 1px solid rgba(253, 251, 243, .28);
+  padding: 8px 12px;
+  border-radius: 2px;
+}
+
+.image-tasting { --photo-image: url("assets/oolong-tea-still-life.jpg"); }
+.image-harvest { --photo-image: url("assets/tea-harvest-illustration.jpg"); }
+
+.visual-band {
+  max-width: 1080px;
+  min-height: 320px;
+  margin: 56px auto 0;
+  padding: 22px;
+  border-radius: 4px;
+  border: 1px solid #e8e1cf;
+  background:
+    linear-gradient(90deg, rgba(56,68,47,.68), rgba(56,68,47,.18)),
+    var(--visual-image) center / cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 18px 42px rgba(56, 68, 47, .12);
+}
+
+.visual-band span {
+  max-width: 420px;
+  color: #fdfbf3;
+  background: rgba(56, 68, 47, .74);
+  border: 1px solid rgba(253, 251, 243, .24);
+  padding: 12px 16px;
+  border-radius: 2px;
+  font-size: .9rem;
+  letter-spacing: .14em;
+}
+
+.harvest-band { --visual-image: url("assets/tea-harvest-illustration.jpg"); }
+
+.visual-band span {
+  text-shadow: 0 1px 12px rgba(28, 35, 24, .28);
+}
+
+@media (max-width: 640px) {
+  .visual-band {
+    min-height: 240px;
+    margin-top: 32px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .visual-band span {
+    max-width: none;
+    font-size: .84rem;
+  }
 }
 
 /* ── 四季茶曆 ── */
@@ -254,6 +325,23 @@ section { max-width: 1080px; margin: 0 auto; padding: 72px 24px; }
   text-align: center;
 }
 
+.season-visual {
+  width: 112px;
+  aspect-ratio: 4 / 3;
+  margin: 18px auto 0;
+  border-radius: 4px;
+  border: 1px solid rgba(232, 225, 207, .88);
+  background:
+    linear-gradient(rgba(56, 68, 47, .08), rgba(56, 68, 47, .18)),
+    var(--season-image) center / cover no-repeat;
+  box-shadow: 0 12px 26px rgba(56, 68, 47, .12);
+}
+
+.spring-visual { --season-image: url("assets/season-spring-tea.jpg"); }
+.summer-visual { --season-image: url("assets/season-summer-tea.jpg"); }
+.autumn-visual { --season-image: url("assets/season-autumn-tea-v2.jpg"); }
+.winter-visual { --season-image: url("assets/season-winter-tea-v2.jpg"); }
+
 .season-label .name {
   font-family: "Noto Serif TC", serif;
   font-size: 1.7rem;
@@ -269,6 +357,19 @@ section { max-width: 1080px; margin: 0 auto; padding: 72px 24px; }
 
 .season-body h3 { font-size: 1.1rem; margin-bottom: 8px; letter-spacing: 0.1em; }
 .season-body p { color: var(--soft); font-size: 0.93rem; margin-bottom: 10px; }
+
+@media (max-width: 600px) {
+  .season-label {
+    text-align: left;
+  }
+
+  .season-visual {
+    width: 100%;
+    max-width: none;
+    aspect-ratio: 16 / 7;
+    margin: 14px 0 8px;
+  }
+}
 
 .tea-list { list-style: none; }
 
@@ -382,8 +483,8 @@ footer {
 /* ── 頁首小橫幅（內頁） ── */
 .page-banner {
   background:
-    linear-gradient(rgba(40,52,34,.5), rgba(40,52,34,.6)),
-    linear-gradient(165deg, #6b7d5a, #38442f);
+    linear-gradient(rgba(40,52,34,.58), rgba(40,52,34,.66)),
+    url("assets/tea-mountain-mist.jpg") center 52% / cover no-repeat;
   color: #fdfbf3;
   text-align: center;
   padding: 64px 24px;
@@ -397,6 +498,9 @@ footer {
 
 .page-banner p {
   margin-top: 10px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
   opacity: .9;
   font-size: 0.95rem;
   letter-spacing: 0.15em;
