@@ -1,4 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://nantou-tea.github.io/tea/sitemap.xml
+Sitemap: http://nantoutea.tw/sitemap.xml

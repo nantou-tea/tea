@@ -171,6 +171,64 @@ section { max-width: 1080px; margin: 0 auto; padding: 72px 24px; }
   margin: 14px auto 0;
 }
 
+.copy-block {
+  max-width: 880px;
+  margin: 0 auto 28px;
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.copy-block p + p { margin-top: 10px; }
+
+.order-guide { padding-top: 56px; }
+
+.order-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.order-step {
+  display: block;
+  min-height: 100%;
+  background: var(--paper);
+  border: 1px solid #e8e1cf;
+  border-radius: 4px;
+  padding: 22px 20px;
+  color: var(--ink);
+}
+
+.order-step:hover {
+  box-shadow: 0 10px 28px rgba(56, 68, 47, 0.1);
+  transform: translateY(-2px);
+}
+
+.order-step span {
+  display: block;
+  color: var(--clay);
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.order-step strong {
+  display: block;
+  color: var(--deep-green);
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.12rem;
+  letter-spacing: .1em;
+  margin-bottom: 8px;
+}
+
+.order-step p {
+  color: var(--soft);
+  font-size: .92rem;
+}
+
+@media (max-width: 760px) {
+  .order-steps { grid-template-columns: 1fr; }
+}
+
 /* ── 卡片 ── */
 .grid {
   display: grid;
