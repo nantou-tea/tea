@@ -335,6 +335,7 @@ section { max-width: 1080px; margin: 0 auto; padding: 72px 24px; }
 
 @media (max-width: 760px) {
   .order-steps { grid-template-columns: 1fr; }
+  .question-grid { grid-template-columns: 1fr; }
 }
 
 /* ── 卡片 ── */
@@ -342,6 +343,26 @@ section { max-width: 1080px; margin: 0 auto; padding: 72px 24px; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 28px;
+}
+
+.question-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.question-grid .card {
+  min-height: 100%;
+}
+
+.question-grid .tag {
+  border-radius: 3px;
+  background: rgba(91, 110, 79, .08);
+  font-family: "Noto Serif TC", serif;
+  color: var(--deep-green);
+}
+
+@media (max-width: 760px) {
+  .question-grid { grid-template-columns: 1fr; }
 }
 
 .card {
