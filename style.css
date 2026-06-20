@@ -286,8 +286,141 @@ section { max-width: 1080px; margin: 0 auto; padding: 72px 24px; }
   letter-spacing: .04em;
 }
 
+.pick-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.pick-card {
+  background: var(--paper);
+  border: 1px solid #e8e1cf;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(56, 68, 47, .08);
+}
+
+.pick-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.pick-card div {
+  padding: 20px 20px 22px;
+}
+
+.pick-card h3 {
+  font-size: 1.08rem;
+  margin-bottom: 8px;
+  letter-spacing: .12em;
+}
+
+.pick-card p {
+  color: var(--soft);
+  font-size: .92rem;
+  margin-bottom: 12px;
+}
+
+.pick-card a {
+  display: inline-block;
+  color: var(--tea-green);
+  font-size: .88rem;
+  letter-spacing: .12em;
+  border-bottom: 1px solid rgba(91, 110, 79, .4);
+}
+
+.flavor-table {
+  display: grid;
+  background: var(--paper);
+  border: 1px solid #e8e1cf;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.flavor-row {
+  display: grid;
+  grid-template-columns: .85fr 1.25fr 1.25fr 1.25fr;
+  border-bottom: 1px solid #e8e1cf;
+}
+
+.flavor-row:last-child { border-bottom: none; }
+
+.flavor-row > div {
+  padding: 16px 18px;
+  border-right: 1px solid #e8e1cf;
+  color: var(--soft);
+  font-size: .92rem;
+}
+
+.flavor-row > div:last-child { border-right: none; }
+
+.flavor-row > div:first-child {
+  color: var(--deep-green);
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: .1em;
+}
+
+.flavor-head > div {
+  background: rgba(91, 110, 79, .08);
+  color: var(--deep-green);
+  font-family: "Noto Serif TC", serif;
+}
+
+.brew-grid,
+.detail-grid,
+.scenario-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.brew-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.detail-grid,
+.scenario-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.brew-card,
+.detail-panel,
+.scenario-card {
+  background: var(--paper);
+  border: 1px solid #e8e1cf;
+  border-radius: 4px;
+  padding: 22px 20px;
+  box-shadow: 0 12px 30px rgba(56, 68, 47, .07);
+}
+
+.brew-card span,
+.detail-panel span {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--clay);
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.1rem;
+  letter-spacing: .12em;
+}
+
+.brew-card h3,
+.detail-panel h3,
+.scenario-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  letter-spacing: .1em;
+}
+
+.brew-card p,
+.detail-panel p,
+.scenario-card p {
+  color: var(--soft);
+  font-size: .92rem;
+}
+
 @media (max-width: 900px) {
   .trust-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pick-grid,
+  .brew-grid { grid-template-columns: 1fr; }
+  .detail-grid,
+  .scenario-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .flavor-row { grid-template-columns: 1fr 1fr; }
 }
 
 .order-steps {
@@ -739,6 +872,51 @@ section { max-width: 1080px; margin: 0 auto; padding: 72px 24px; }
   .image-strip { grid-template-columns: 1fr; }
 
   .trust-grid { grid-template-columns: 1fr; }
+
+  .detail-grid,
+  .scenario-grid { grid-template-columns: 1fr; }
+
+  .flavor-table {
+    display: block;
+    border: none;
+    background: transparent;
+  }
+
+  .flavor-head { display: none; }
+
+  .flavor-row {
+    display: block;
+    margin-bottom: 16px;
+    background: var(--paper);
+    border: 1px solid #e8e1cf;
+    border-radius: 4px;
+    box-shadow: 0 10px 24px rgba(56, 68, 47, .08);
+    overflow: hidden;
+  }
+
+  .flavor-row > div {
+    padding: 0 18px 14px;
+    border-right: none;
+  }
+
+  .flavor-row > div:first-child {
+    padding: 18px 18px 8px;
+    font-size: 1.12rem;
+  }
+
+  .flavor-row > div:nth-child(2)::before,
+  .flavor-row > div:nth-child(3)::before,
+  .flavor-row > div:nth-child(4)::before {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--clay);
+    font-size: .78rem;
+    letter-spacing: .16em;
+  }
+
+  .flavor-row > div:nth-child(2)::before { content: "香氣口感"; }
+  .flavor-row > div:nth-child(3)::before { content: "適合情境"; }
+  .flavor-row > div:nth-child(4)::before { content: "詢問重點"; }
 }
 
 /* ── 引言 ── */
