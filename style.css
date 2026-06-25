@@ -225,6 +225,32 @@ section { max-width: 1080px; margin: 0 auto; padding: 72px 24px; }
 
 .copy-block p + p { margin-top: 10px; }
 
+.article-copy {
+  color: var(--ink);
+}
+
+.article-copy h2 {
+  margin-bottom: 14px;
+  font-size: 1.55rem;
+  letter-spacing: .16em;
+}
+
+.article-copy p {
+  margin-bottom: 16px;
+  color: var(--soft);
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.article-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.article-wide {
+  max-width: 820px;
+  margin: 0 auto 30px;
+}
+
 .order-guide { padding-top: 56px; }
 
 .guide-note {
@@ -1037,4 +1063,82 @@ footer {
   opacity: .9;
   font-size: 0.95rem;
   letter-spacing: 0.15em;
+}
+
+/* ── 長文文章區（SEO 內容） ── */
+.long-article {
+  max-width: 820px;
+  margin: 0 auto;
+  color: var(--ink);
+}
+
+.long-article > p,
+.long-article ul,
+.long-article ol {
+  color: var(--soft);
+  font-size: 1.02rem;
+  line-height: 2.05;
+  margin-bottom: 18px;
+}
+
+.long-article h3 {
+  margin: 34px 0 12px;
+  font-size: 1.28rem;
+  letter-spacing: 0.12em;
+  padding-left: 14px;
+  border-left: 4px solid var(--tea-green);
+}
+
+.long-article h4 {
+  margin: 22px 0 8px;
+  font-family: "Noto Serif TC", serif;
+  color: var(--earth);
+  font-size: 1.06rem;
+  letter-spacing: 0.1em;
+}
+
+.long-article ul,
+.long-article ol {
+  padding-left: 1.4em;
+}
+
+.long-article li { margin-bottom: 8px; }
+
+.long-article li strong { color: var(--deep-green); }
+
+.long-article p a,
+.long-article li a {
+  color: var(--tea-green);
+  border-bottom: 1px solid rgba(91,110,79,.4);
+}
+
+.long-article .lead {
+  font-size: 1.1rem;
+  color: var(--ink);
+  line-height: 1.95;
+}
+
+.long-article .key-takeaways {
+  background: var(--paper);
+  border: 1px solid #e8e1cf;
+  border-radius: 6px;
+  padding: 22px 26px;
+  margin: 8px 0 28px;
+  box-shadow: 0 10px 24px rgba(56, 68, 47, .06);
+}
+
+.long-article .key-takeaways h3 {
+  margin-top: 0;
+  border-left: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  color: var(--earth);
+  letter-spacing: 0.16em;
+}
+
+.long-article .key-takeaways ul { margin-bottom: 0; }
+
+@media (max-width: 720px) {
+  .long-article .key-takeaways { padding: 18px 18px; }
+  .long-article h3 { font-size: 1.16rem; }
 }
