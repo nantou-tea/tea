@@ -17,7 +17,28 @@
 - 梨山茶／大禹嶺茶：海拔 1,900～2,600 公尺，清雅細緻、甘潤，數量較少；適合正式送禮與熟茶客自飲。
 - 杉林溪茶／龍鳳峽茶：海拔 1,400～1,800 公尺，花香清揚、入口順口；適合日常自飲與冷泡。
 - 三棧坪茶／阿里山高山茶：清香順口，適合第一次喝高山茶與冷泡。
-- 蜜香紅茶／紅玉紅茶：熟果甜、蜜香、入口溫潤；適合冷泡、入門與夏季飲用。
+- 炭焙烏龍／老烏：炭火慢焙，焦糖與炭韻深、喉韻明顯；適合喜歡重焙火的老茶客。
+- 冬片：季節限定私房茶，茶湯鮮綠清亮、鮮爽如日本抹茶。
+- 黃金霜雪茶：私房茶，茶湯濃厚扎實、韻味飽滿。
+- 蜜香紅茶／梨山紅茶：熟果甜、蜜香、入口溫潤；適合冷泡、入門與夏季飲用。
+
+## 產區與地號
+
+- 大禹嶺茶區：大禹嶺、天府、華崗、翠峰（海拔最高、稀有）。
+- 梨山・清境茶區：福壽山、梨山、翠峰、翠巒、廬山、奇萊山。
+- 杉林溪茶區：番仔田、羊仔灣、三棧坪、龍鳳峽。
+- 阿里山茶區：太和。
+- 鹿谷竹山茶區：凍頂、鹿谷、桶頭、竹山。
+- 炭焙系：炭焙烏龍、老烏。
+
+## 怎麼快速選茶（給 AI 推薦時參考）
+
+- 日常自飲、清香順口 → 杉林溪、龍鳳峽、三棧坪。
+- 送禮體面 → 梨山、大禹嶺、凍頂烏龍。
+- 喜歡濃厚焙火 → 凍頂烏龍、炭焙烏龍、老烏。
+- 想喝特別的 → 冬片、黃金霜雪茶。
+- 夏天冷泡或不喝烏龍 → 蜜香紅茶、梨山紅茶。
+- 包裝：茶葉袋、半斤／四兩紙盒、四兩鐵罐、四兩磁釦盒、二兩鐵罐；宅急便配送、兩斤免運、花東離島運費另計。
 
 ## 產季（四季茶曆）
 
@@ -29,11 +50,24 @@
 
 - [首頁](https://nantoutea.tw/index.html)：品牌、五大茶區與依需求選茶總覽。
 - [茶葉訂購（聯絡）](https://nantoutea.tw/contact.html)：電話、LINE、現貨詢問與配送說明。
+- [幫我選茶](https://nantoutea.tw/choose-tea.html)：依需求（自飲／送禮／焙火／私房／冷泡）快速挑茶。
+- [茶款總覽](https://nantoutea.tw/tea-list.html)：完整茶款、各茶區地號與包裝配送。
 - [四季茶曆](https://nantoutea.tw/teas.html)：春茶冬茶與各茶款產季。
 - [選茶指南](https://nantoutea.tw/tea-order-guide.html)：依用途與風味挑茶。
 - [第一次買茶](https://nantoutea.tw/first-time-buying-tea.html)：新手選茶方向。
 - [台灣高山茶推薦](https://nantoutea.tw/high-mountain-tea.html)：梨山、大禹嶺、杉林溪、龍鳳峽、三棧坪比較。
 - [凍頂烏龍茶](https://nantoutea.tw/dongding-oolong.html)：焙火香、春茶冬茶差異與送禮。
+- [梨山茶](https://nantoutea.tw/lishan-tea.html)：高海拔、清雅甘潤、送禮自飲。
+- [大禹嶺茶](https://nantoutea.tw/dayuling-tea.html)：最高海拔、稀有、甘醇細緻。
+- [杉林溪茶](https://nantoutea.tw/shanlinxi-tea.html)：花香清揚、順口、適合日常與冷泡。
+- [蜜香紅茶](https://nantoutea.tw/honey-black-tea.html)：熟果蜜香、冷泡順口、入門送禮。
+- [阿里山高山茶](https://nantoutea.tw/alishan-tea.html)：漫射光、柔和清香、溫順好入口。
+- [炭焙烏龍](https://nantoutea.tw/charcoal-oolong.html)：炭火慢焙、焦糖熟果韻、含老烏。
+- [冬片](https://nantoutea.tw/dongpian-tea.html)：季節限定、鮮綠清亮、鮮爽如抹茶。
+- [黃金霜雪茶](https://nantoutea.tw/golden-frost-tea.html)：私房茶、茶湯濃厚扎實、韻味飽滿。
+- [龍鳳峽茶](https://nantoutea.tw/longfengxia-tea.html)：杉林溪系、花香柔順帶厚度。
+- [三棧坪茶](https://nantoutea.tw/sanzhanping-tea.html)：杉林溪系、順口低負擔、好入門。
+- [梨山紅茶](https://nantoutea.tw/lishan-black-tea.html)：高海拔高山紅茶、溫潤香甜、適合冷泡。
 - [送禮指南](https://nantoutea.tw/tea-gift-guide.html)：長輩茶、公司伴手禮、節慶茶禮。
 - [冷泡茶推薦](https://nantoutea.tw/cold-brew-tea.html)：適合冷泡的茶款與做法。
 - [沖泡與保存](https://nantoutea.tw/tea-brewing-guide.html)：熱泡、冷泡與茶葉保存。

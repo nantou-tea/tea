@@ -433,6 +433,34 @@ section { max-width: 1080px; margin: 0 auto; padding: 72px 24px; }
   letter-spacing: .1em;
 }
 
+/* 可點擊的卡片（連結）— 加上視覺提示 */
+a.scenario-card {
+  display: block;
+  border-left: 4px solid var(--tea-green);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+a.scenario-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(56, 68, 47, .15);
+}
+
+a.scenario-card h3 { color: var(--deep-green); }
+
+a.scenario-card h3::after {
+  content: " →";
+  color: var(--clay);
+  font-weight: 400;
+}
+
+a.scenario-card .more {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--tea-green);
+  font-size: .9rem;
+  font-weight: 600;
+}
+
 .brew-card p,
 .detail-panel p,
 .scenario-card p {
@@ -1026,6 +1054,14 @@ footer {
   letter-spacing: 0.2em;
 }
 
+.footer-about {
+  margin-top: 12px;
+  max-width: 340px;
+  font-size: 0.82rem;
+  line-height: 1.95;
+  color: #aab4a0;
+}
+
 .footer-inner ul { list-style: none; }
 .footer-inner li { margin-bottom: 6px; }
 .footer-inner a { color: #cfd6c2; }
@@ -1063,6 +1099,156 @@ footer {
   opacity: .9;
   font-size: 0.95rem;
   letter-spacing: 0.15em;
+}
+
+/* ── 落地頁頂部 CTA（推薦＋訂購） ── */
+.cta-band {
+  width: min(1080px, calc(100% - 48px));
+  margin: 30px auto 0;
+  padding: 20px 26px;
+  background: var(--paper);
+  border: 1px solid #e8e1cf;
+  border-left: 5px solid var(--tea-green);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(56, 68, 47, .08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-band .cta-text { flex: 1 1 260px; min-width: 0; }
+
+.cta-band .cta-text strong {
+  display: block;
+  font-family: "Noto Serif TC", serif;
+  color: var(--deep-green);
+  font-size: 1.12rem;
+  margin-bottom: 5px;
+  letter-spacing: .06em;
+}
+
+.cta-band .cta-text span {
+  color: var(--soft);
+  font-size: .95rem;
+  line-height: 1.7;
+}
+
+.cta-band-actions {
+  display: flex;
+  gap: 10px;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+}
+
+.cta-band-actions a {
+  display: inline-block;
+  padding: 11px 20px;
+  border-radius: 4px;
+  font-size: .95rem;
+  white-space: nowrap;
+  letter-spacing: .05em;
+  text-align: center;
+  transition: all .2s ease;
+}
+
+.cta-band-actions .act-order { background: var(--tea-green); color: #fdfbf3; }
+.cta-band-actions .act-order:hover { background: var(--deep-green); }
+.cta-band-actions .act-line { background: #06c755; color: #fff; }
+.cta-band-actions .act-line:hover { filter: brightness(.94); }
+
+@media (max-width: 860px) {
+  .cta-band { flex-direction: column; align-items: stretch; }
+  .cta-band .cta-text { flex: 1 1 auto; }
+  .cta-band-actions { width: 100%; }
+  .cta-band-actions a { flex: 1 1 140px; }
+}
+
+/* ── 選茶清單（需求 → 推薦） ── */
+.choose-list {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.choose-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--paper);
+  border: 1px solid #e8e1cf;
+  border-left: 5px solid var(--tea-green);
+  border-radius: 6px;
+  padding: 18px 22px;
+  color: var(--ink);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.choose-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(56, 68, 47, .12);
+}
+
+.choose-row .need {
+  flex: 0 0 180px;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 600;
+  color: var(--deep-green);
+  font-size: 1.18rem;
+  letter-spacing: .06em;
+}
+
+.choose-row .need small {
+  display: block;
+  margin-top: 3px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: .8rem;
+  color: var(--clay);
+  letter-spacing: .04em;
+}
+
+.choose-row .rec {
+  flex: 1;
+  color: var(--soft);
+  font-size: 1rem;
+}
+
+.choose-row .rec strong { color: var(--deep-green); }
+
+.choose-row .arrow {
+  color: var(--clay);
+  font-size: 1.2rem;
+  flex: 0 0 auto;
+}
+
+.choose-help {
+  max-width: 760px;
+  margin: 18px auto 0;
+  text-align: center;
+  background: var(--deep-green);
+  color: #eef1e8;
+  border-radius: 6px;
+  padding: 18px 22px;
+  font-size: .98rem;
+}
+
+.choose-help a {
+  color: #fdfbf3;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(253,251,243,.5);
+}
+
+@media (max-width: 640px) {
+  .choose-row {
+    flex-wrap: wrap;
+    gap: 6px 14px;
+  }
+  .choose-row .need { flex: 1 1 100%; font-size: 1.1rem; }
+  .choose-row .rec { flex: 1 1 auto; }
 }
 
 /* ── 長文文章區（SEO 內容） ── */

@@ -72,7 +72,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "龍鳳峽茶",
         "三棧坪茶",
         "阿里山高山茶",
-        "蜜香紅茶"
+        "炭焙烏龍",
+        "老烏",
+        "冬片",
+        "黃金霜雪茶",
+        "蜜香紅茶",
+        "梨山紅茶"
       ],
       "areaServed": { "@type": "Country", "name": "台灣" },
       "currenciesAccepted": "TWD",
@@ -87,7 +92,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "龍鳳峽茶", "category": "高山烏龍茶" } },
           { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "三棧坪茶", "category": "高山烏龍茶" } },
           { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "阿里山高山茶", "category": "高山烏龍茶" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "蜜香紅茶", "category": "紅茶" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "炭焙烏龍", "category": "焙火烏龍茶" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "老烏", "category": "焙火烏龍茶" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "冬片", "category": "高山烏龍茶" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "黃金霜雪茶", "category": "高山烏龍茶" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "蜜香紅茶", "category": "紅茶" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "梨山紅茶", "category": "紅茶" } }
         ]
       }
     }
@@ -114,9 +124,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </a>
     <ul>
       <li><a href="index.html" class="active">首頁</a></li>
+      <li><a href="choose-tea.html">幫我選茶</a></li>
+      <li><a href="tea-list.html">茶款總覽</a></li>
       <li><a href="teas.html">四季茶曆</a></li>
-      <li><a href="tea-order-guide.html">選茶指南</a></li>
-      <li><a href="tea-brewing-guide.html">沖泡保存</a></li>
       <li><a href="contact.html">茶葉訂購</a></li>
     </ul>
   </nav>
@@ -125,41 +135,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="hero">
   <h1>雲霧之間，一葉好茶</h1>
   <p>從大禹嶺、梨山、杉林溪、龍鳳峽、三棧坪，到凍頂烏龍的故鄉鹿谷——依產季嚴選台灣高山茶，把山的味道留進每一壺茶湯裡。</p>
-  <a href="teas.html" class="btn">探索四季茶曆</a>
+  <a href="choose-tea.html" class="btn">幫我選茶</a>
 </div>
 
-<section>
+<section class="quick-pick">
   <div class="section-title">
-    <h2>本季可以先問這幾款</h2>
-    <div class="sub">CURRENT PICKS</div>
+    <h2>不知道買哪款？</h2>
+    <div class="sub">FIND YOUR TEA</div>
+    <div class="divider"></div>
+  </div>
+  <div class="copy-block" style="text-align:center;">
+    <p>先想三件事：<strong>自己喝還是送禮、喜歡清香還是焙火、大概買多少</strong>。用我們的選茶頁，依需求幫你縮小到 2–3 款，再用 LINE 或電話確認當季現貨。</p>
+    <p style="margin-top:20px;"><a href="choose-tea.html" class="btn solid">找出適合我的茶 →</a></p>
+  </div>
+</section>
+
+<section id="signature-tea">
+  <div class="section-title">
+    <h2>本季私房推薦</h2>
+    <div class="sub">SIGNATURE PICKS</div>
     <div class="divider"></div>
   </div>
   <div class="copy-block">
-    <p>茶葉會跟著產季、批次與焙火狀態變化。若不知道現在該喝什麼，可以先從這幾個方向詢問，我們會依現貨和用途推薦。</p>
+    <p>想喝點不一樣的，這兩款是我們特別推薦、辨識度也高的私房茶。喜歡的話再依現貨詢問當季批次與包裝。</p>
   </div>
   <div class="pick-grid">
     <article class="pick-card">
-      <img src="assets/season-summer-tea.jpg" alt="蜜香紅茶茶湯與乾茶，夏季茶葉訂購推薦" loading="lazy">
+      <img src="assets/season-spring-tea.jpg" alt="冬片茶湯鮮綠，鮮爽如日本抹茶的高山茶" loading="lazy">
       <div>
-        <span class="tag">夏季甜香</span>
-        <h3>蜜香紅茶</h3>
-        <p>熟果甜、蜜香明顯，熱泡冷泡都順口。適合不常喝烏龍茶的人，也適合夏天冰箱冷泡。</p>
-        <a href="contact.html">詢問蜜香紅茶</a>
+        <span class="tag">鮮爽・私房</span>
+        <h3><a href="dongpian-tea.html">冬片</a></h3>
+        <p>茶湯鮮綠、香氣清亮，喝起來像日本抹茶般鮮「生」清爽。產量少、季節限定，喜歡清新風格的人很值得一試。</p>
+        <a href="contact.html">詢問冬片現貨</a>
       </div>
     </article>
     <article class="pick-card">
-      <img src="assets/tea-mountain-mist.jpg" alt="杉林溪與龍鳳峽高山茶茶園雲霧" loading="lazy">
+      <img src="assets/season-winter-tea-v2.jpg" alt="黃金霜雪茶湯金黃濃厚，高山烏龍茶推薦" loading="lazy">
       <div>
-        <span class="tag">清香日常</span>
-        <h3>杉林溪・龍鳳峽</h3>
-        <p>花香清楚、茶湯乾淨，日常熱泡或冷泡都合適。想找清爽不苦澀的高山茶，可以先問這類茶款。</p>
-        <a href="high-mountain-tea.html">比較高山茶</a>
+        <span class="tag">濃厚・私房</span>
+        <h3><a href="golden-frost-tea.html">黃金霜雪茶</a></h3>
+        <p>茶湯飽滿濃厚、韻味扎實，入口層次明顯。喜歡茶湯有份量、喝得到厚度的人會特別喜歡這款。</p>
+        <a href="contact.html">詢問黃金霜雪茶</a>
       </div>
     </article>
     <article class="pick-card">
       <img src="assets/oolong-tea-still-life.jpg" alt="凍頂烏龍茶席與茶湯，適合送禮與日常待客" loading="lazy">
       <div>
-        <span class="tag">焙火厚韻</span>
+        <span class="tag">經典・焙火</span>
         <h3>凍頂烏龍</h3>
         <p>焙火香沉穩、茶湯厚實，長輩接受度高。自飲、待客、節慶拜訪都可以先詢問春茶或冬茶批次。</p>
         <a href="dongding-oolong.html">看凍頂烏龍</a>
@@ -201,277 +223,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>台灣烏龍茶的故鄉。傳統焙火工藝代代相傳，喉韻甘醇、桂花香尾韻悠長，凍頂烏龍聞名遐邇。</p>
     </div>
   </div>
+  <p class="guide-note">想看完整茶款、各茶區地號與包裝配送，請看 <a href="tea-list.html">茶款總覽</a>。</p>
 </section>
 
-<section class="order-guide">
+<section>
   <div class="section-title">
-    <h2>茶葉訂購怎麼選</h2>
-    <div class="sub">ORDER GUIDE</div>
+    <h2>更多茶葉指南</h2>
+    <div class="sub">LEARN MORE</div>
     <div class="divider"></div>
   </div>
-  <div class="copy-block">
-      <p>想訂購茶葉時，先想用途會比先看茶名更準。日常自飲可以選四季春、杉林溪、龍鳳峽或三棧坪；送禮可選凍頂烏龍、梨山茶或大禹嶺茶；喜歡茶湯厚實與焙火香，凍頂烏龍會比清香型高山茶更適合。</p>
-    <p>如果不確定要買哪一款，直接告訴我們「自用或送禮、喜歡清香或焙火香、預計購買數量」，我們會依照季節與現有茶款推薦。</p>
-  </div>
-  <div class="order-steps">
-    <a class="order-step" href="teas.html">
-      <span>01</span>
-      <strong>先看產季</strong>
-      <p>春茶香氣高、冬茶茶湯細，夏季適合蜜香紅茶。</p>
+  <div class="scenario-grid">
+    <a class="scenario-card" href="teas.html">
+      <h3>四季茶曆</h3>
+      <p>春茶、冬茶、蜜香紅茶什麼時候買最新鮮。</p>
     </a>
-    <a class="order-step" href="tea-order-guide.html">
-      <span>02</span>
-      <strong>依用途選茶</strong>
-      <p>自用、送禮、長輩茶或公司伴手禮，先看適合茶款。</p>
+    <a class="scenario-card" href="tea-order-guide.html">
+      <h3>選茶指南</h3>
+      <p>依用途、風味與產季，建立挑茶方向。</p>
     </a>
-    <a class="order-step" href="contact.html">
-      <span>03</span>
-      <strong>詢問現貨</strong>
-      <p>用電話或 LINE 確認茶款、斤數、包裝與配送。</p>
+    <a class="scenario-card" href="first-time-buying-tea.html">
+      <h3>第一次買茶</h3>
+      <p>不用先懂茶名，先知道需求就能找到合適茶款。</p>
+    </a>
+    <a class="scenario-card" href="tea-gift-guide.html">
+      <h3>送禮指南</h3>
+      <p>長輩茶、公司伴手禮、節慶茶禮怎麼挑。</p>
+    </a>
+    <a class="scenario-card" href="tea-brewing-guide.html">
+      <h3>沖泡與保存</h3>
+      <p>水溫、比例、冷泡與茶葉保存方法。</p>
+    </a>
+    <a class="scenario-card" href="tea-faq.html">
+      <h3>常見問題</h3>
+      <p>保存、送禮、冷泡與第一次買茶的疑問。</p>
     </a>
   </div>
-</section>
-
-<section>
-  <div class="two-col">
-    <figure class="content-photo">
-      <img src="assets/oolong-tea-still-life.jpg" alt="第一次買茶可從茶湯、乾茶與用途開始選擇" loading="lazy">
-      <figcaption>第一次買茶不用先懂茶名，先知道自飲、送禮或冷泡需求，就能更快找到合適茶款。</figcaption>
-    </figure>
-    <div class="article-copy">
-      <h2>第一次買茶，可以先從用途開始</h2>
-      <p>如果你不確定要買哪一款茶，先不要急著比較茶名。日常自飲、送長輩、公司伴手禮、夏天冷泡，適合的茶款其實不一樣。</p>
-      <p>我們整理了一篇完整文章，從自飲、送禮、冷泡、高山茶與凍頂烏龍說起，讓第一次買茶的人可以先建立方向，再用 LINE 或電話詢問現貨。</p>
-      <a href="first-time-buying-tea.html" class="btn solid" style="margin-top:12px;">閱讀第一次買茶指南</a>
-    </div>
-  </div>
-</section>
-
-<section class="intent-guide">
-  <div class="section-title">
-    <h2>依需求推薦茶款</h2>
-    <div class="sub">TEA MATCH</div>
-    <div class="divider"></div>
-  </div>
-  <div class="grid">
-    <div class="card">
-      <span class="tag">日常自飲</span>
-      <h3>四季春・杉林溪高山茶</h3>
-      <p>香氣清楚、沖泡容易，適合每天在家或辦公室飲用。喜歡清香不苦澀，可以從四季春、杉林溪或三棧坪茶開始。</p>
-    </div>
-    <div class="card">
-      <span class="tag">長輩送禮</span>
-      <h3><a href="dongding-oolong.html">凍頂烏龍</a>・梨山茶・大禹嶺茶</h3>
-      <p>凍頂烏龍茶湯厚實、焙火香沉穩；梨山茶與大禹嶺茶清雅甘潤，適合過年、節慶、拜訪長輩與重要客戶送禮。</p>
-    </div>
-    <div class="card">
-      <span class="tag">清香入門</span>
-      <h3><a href="high-mountain-tea.html">杉林溪茶・龍鳳峽茶</a></h3>
-      <p>想找花香明顯、茶湯乾淨順口的茶款，杉林溪、龍鳳峽與阿里山都是容易被接受的高山茶選擇。</p>
-    </div>
-    <div class="card">
-      <span class="tag">甜香紅茶</span>
-      <h3>蜜香紅茶・紅玉紅茶</h3>
-      <p>喜歡蜜香、熟果甜與溫潤口感，可以選蜜香紅茶；想要香氣更有個性，紅玉紅茶也很適合。</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <h2>送禮茶葉怎麼選</h2>
-    <div class="sub">GIFT GUIDE</div>
-    <div class="divider"></div>
-  </div>
-  <div class="image-strip tea-note-grid">
-    <figure>
-      <img src="assets/oolong-tea-still-life.jpg" alt="凍頂烏龍茶席與茶湯，適合長輩茶與節慶送禮" loading="lazy">
-      <figcaption>
-        <h3>長輩茶</h3>
-        <p>偏好穩重茶湯與焙火香，可先問凍頂烏龍；若喜歡清雅甘潤，梨山茶與大禹嶺茶也適合正式送禮。</p>
-      </figcaption>
-    </figure>
-    <figure>
-      <img src="assets/tea-mountain-mist.jpg" alt="高山茶園雲霧，梨山茶大禹嶺茶與杉林溪茶送禮推薦" loading="lazy">
-      <figcaption>
-        <h3>公司伴手禮</h3>
-        <p>需要多份茶禮時，先確認同批茶款、包裝與到貨日期。梨山、杉林溪與阿里山高山茶辨識度高，容易說明。</p>
-      </figcaption>
-    </figure>
-    <figure>
-      <img src="assets/season-summer-tea.jpg" alt="蜜香紅茶茶湯，適合年輕族群與入門送禮" loading="lazy">
-      <figcaption>
-        <h3>入門送禮</h3>
-        <p>不確定對方喝不喝烏龍茶，可以問蜜香紅茶或清香型高山茶，香氣明顯、入口溫潤，接受度較高。</p>
-      </figcaption>
-    </figure>
-  </div>
-  <p class="guide-note">要送長輩、客戶或公司同事，可以先看 <a href="tea-gift-guide.html">茶葉送禮推薦</a>，再詢問現貨與包裝。</p>
-</section>
-
-<section>
-  <div class="section-title">
-    <h2>茶款風味比較</h2>
-    <div class="sub">TASTING NOTES</div>
-    <div class="divider"></div>
-  </div>
-  <div class="flavor-table">
-    <div class="flavor-row flavor-head">
-      <div>茶款</div>
-      <div>香氣口感</div>
-      <div>適合情境</div>
-      <div>詢問重點</div>
-    </div>
-    <div class="flavor-row">
-      <div>梨山茶</div>
-      <div>清雅細緻，茶湯甘潤。</div>
-      <div>正式送禮、熟茶客自飲。</div>
-      <div>可問春茶、冬茶與當季批次。</div>
-    </div>
-    <div class="flavor-row">
-      <div>大禹嶺茶</div>
-      <div>細緻甘醇，數量較少。</div>
-      <div>重要節慶、長輩或客戶送禮。</div>
-      <div>建議先確認現貨與斤數。</div>
-    </div>
-    <div class="flavor-row">
-      <div>杉林溪茶</div>
-      <div>花香清揚，入口順口。</div>
-      <div>日常自飲、辦公室泡茶。</div>
-      <div>可問熱泡或冷泡適合批次。</div>
-    </div>
-    <div class="flavor-row">
-      <div>凍頂烏龍</div>
-      <div>焙火香、茶湯厚實、喉韻明顯。</div>
-      <div>待客、長輩茶、節慶禮盒。</div>
-      <div>可問焙火程度與春冬茶差異。</div>
-    </div>
-    <div class="flavor-row">
-      <div>蜜香紅茶</div>
-      <div>熟果甜、蜜香、入口溫潤。</div>
-      <div>冷泡、入門茶、夏季飲用。</div>
-      <div>可問今年產季與可訂數量。</div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <h2>訂購前可以確認的細節</h2>
-    <div class="sub">REAL DETAILS</div>
-    <div class="divider"></div>
-  </div>
-  <div class="trust-grid">
-    <div class="trust-item">
-      <span>01</span>
-      <h3>確認當季現貨</h3>
-      <p>茶葉每季、每批風味不同，建議先用 LINE 詢問目前可訂茶款與斤數。</p>
-    </div>
-    <div class="trust-item">
-      <span>02</span>
-      <h3>說明喜歡的口味</h3>
-      <p>清香、焙火香、蜜香紅茶或長輩茶，都可以直接告訴我們用途。</p>
-    </div>
-    <div class="trust-item">
-      <span>03</span>
-      <h3>確認包裝方式</h3>
-      <p>自用可選茶葉袋，送禮可詢問茶罐紙盒，訂購前先確認最安心。</p>
-    </div>
-    <div class="trust-item">
-      <span>04</span>
-      <h3>確認出貨時間</h3>
-      <p>若是節慶、拜訪或公司送禮，建議先告知希望到貨日期。</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <h2>從詢問到收到茶</h2>
-    <div class="sub">ORDER FLOW</div>
-    <div class="divider"></div>
-  </div>
-  <div class="image-strip tea-note-grid">
-    <figure>
-      <img src="assets/tea-mountain-mist.jpg" alt="高山茶園雲霧，詢問當季茶葉現貨與產區" loading="lazy">
-      <figcaption>
-        <h3>先問目前茶款</h3>
-        <p>可以直接問「現在有什麼適合自用或送禮」。我們會依當季現貨、茶湯口感與用途說明。</p>
-      </figcaption>
-    </figure>
-    <figure>
-      <img src="assets/oolong-tea-still-life.jpg" alt="茶葉乾茶與茶湯，確認茶款風味與焙火程度" loading="lazy">
-      <figcaption>
-        <h3>再確認風味</h3>
-        <p>清香、焙火香、蜜香紅茶或茶湯厚度，都可以用白話描述，不需要先懂茶名。</p>
-      </figcaption>
-    </figure>
-    <figure>
-      <img src="assets/season-spring-tea.jpg" alt="春茶茶葉情境，茶葉分裝保存與出貨前確認" loading="lazy">
-      <figcaption>
-        <h3>最後確認包裝</h3>
-        <p>自用以茶葉袋最實用，送禮可詢問茶罐紙盒；如果有到貨日期，也可以一起先確認。</p>
-      </figcaption>
-    </figure>
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <h2>在家也能泡得順口</h2>
-    <div class="sub">BREWING GUIDE</div>
-    <div class="divider"></div>
-  </div>
-  <div class="brew-grid">
-    <div class="brew-card">
-      <span>熱泡</span>
-      <h3>高山茶</h3>
-      <p>建議用 90–95°C 熱水，第一泡約 50 秒。喜歡香氣清楚可稍快出湯，茶湯會更乾淨。</p>
-    </div>
-    <div class="brew-card">
-      <span>熱泡</span>
-      <h3>凍頂烏龍</h3>
-      <p>可用接近沸水沖泡，讓焙火香與茶湯厚度打開。若怕太濃，第一泡先縮短時間。</p>
-    </div>
-    <div class="brew-card">
-      <span>冷泡</span>
-      <h3>蜜香紅茶・清香高山茶</h3>
-      <p>茶葉放入冷水後冷藏 6–8 小時，茶湯甜感柔和，適合夏天或不想喝太濃的人。</p>
-    </div>
-  </div>
-  <p class="guide-note">每款茶的焙火與批次不同，實際泡法可依購買時的茶款一起確認。也可以先看 <a href="tea-brewing-guide.html">茶葉沖泡與保存</a>。</p>
-</section>
-
-<section>
-  <div class="section-title">
-    <h2>買茶常見疑問</h2>
-    <div class="sub">TEA FAQ</div>
-    <div class="divider"></div>
-  </div>
-  <div class="image-strip tea-note-grid">
-    <figure>
-      <img src="assets/season-spring-tea.jpg" alt="茶葉保存與分裝，第一次買茶常見問題" loading="lazy">
-      <figcaption>
-        <h3>第一次買茶怎麼問</h3>
-        <p>不需要先懂茶名，先說用途、口味、斤數與是否送禮，就能更快找到適合茶款。</p>
-      </figcaption>
-    </figure>
-    <figure>
-      <img src="assets/season-summer-tea.jpg" alt="蜜香紅茶與冷泡茶，冷泡茶常見問題" loading="lazy">
-      <figcaption>
-        <h3><a href="cold-brew-tea.html">冷泡茶適合哪款</a></h3>
-        <p>蜜香紅茶、杉林溪、龍鳳峽、三棧坪與阿里山高山茶都適合冷泡，入口更柔和。</p>
-      </figcaption>
-    </figure>
-    <figure>
-      <img src="assets/oolong-tea-still-life.jpg" alt="凍頂烏龍茶湯與乾茶，茶葉保存與送禮常見問題" loading="lazy">
-      <figcaption>
-        <h3>保存與送禮怎麼辦</h3>
-        <p>開封後封緊、避潮、避味；送禮前先確認包裝、份數與希望到貨日期。</p>
-      </figcaption>
-    </figure>
-  </div>
-  <p class="guide-note">更多第一次買茶、保存、送禮與冷泡問題，可先看 <a href="tea-faq.html">茶葉訂購常見問題</a>。</p>
 </section>
 
 <div class="quote">
@@ -504,11 +290,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div>
       <h4>山嵐茶園</h4>
       <p>台灣極品高山茶・五大茶區嚴選</p>
+      <p class="footer-about">山嵐茶園來自南投，依產季手採嚴選大禹嶺、梨山、杉林溪、龍鳳峽、三棧坪等台灣高山茶與凍頂烏龍，傳承傳統焙火工藝。自飲、送禮與冷泡茶款齊全，歡迎以電話或 LINE 詢問當季現貨、斤數與包裝。</p>
     </div>
     <div>
       <h4>網站導覽</h4>
       <ul>
+        <li><a href="choose-tea.html">幫我選茶</a></li>
         <li><a href="teas.html">四季茶曆</a></li>
+        <li><a href="tea-list.html">茶款總覽</a></li>
         <li><a href="tea-order-guide.html">選茶指南</a></li>
         <li><a href="first-time-buying-tea.html">第一次買茶</a></li>
         <li><a href="tea-brewing-guide.html">沖泡保存</a></li>
